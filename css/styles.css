@@ -1,37 +1,87 @@
+
 body {
   margin: 0;
   font-family: sans-serif;
-  padding-bottom: 70px; /* Untuk ruang nav bawah */
+  padding-bottom: 70px;
 }
 
-/* Floating "+" */
+.top-bar {
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.category-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-item {
+  text-align: center;
+  flex: 0 0 auto;
+  font-size: 12px;
+}
+
+.category-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.product-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
 .floating-button {
   position: fixed;
   bottom: 70px;
   right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
   background: #e6007a;
   color: #fff;
   border: none;
-  width: 50px;
-  height: 50px;
-  font-size: 32px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   z-index: 99;
 }
 
-/* Menu bawah statis */
 .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   background: #fff;
-  border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-around;
-  padding: 5px 0;
+  border-top: 1px solid #ccc;
   z-index: 98;
+  padding: 5px 0;
 }
 
 .bottom-nav a {
@@ -44,37 +94,10 @@ body {
 .bottom-nav a img {
   width: 24px;
   height: 24px;
+  display: block;
+  margin: 0 auto 3px;
 }
 
 .bottom-nav a.active {
   color: #e6007a;
-}
-
-/* Scroll kategori */
-.category-scroll {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px;
-  gap: 15px;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  scrollbar-width: none;
-}
-
-.category-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.category-item {
-  flex: 0 0 auto;
-  text-align: center;
-  width: 60px;
-  font-size: 12px;
-}
-
-.category-item img {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
 }
