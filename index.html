@@ -1,18 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+
   <!-- Search -->
-  <header>
-    <input type="text" placeholder="Search product..." />
+  <header class="top-bar">
+    <input type="text" placeholder="Search product...">
   </header>
 
-  <!-- Kategori menu scrollable -->
-  <div class="category-scroll">...</div>
+  <!-- Kategori scrollable -->
+  <div class="category-scroll">
+    <div class="category-item"><img src="img/icon1.svg"><span>Baju</span></div>
+    <div class="category-item"><img src="img/icon2.svg"><span>Digital</span></div>
+    <div class="category-item"><img src="img/icon3.svg"><span>Makanan</span></div>
+    <!-- Tambah ikon sesuai kebutuhan -->
+  </div>
 
-  <!-- Produk -->
-  <main class="product-grid">...</main>
+  <!-- Konten Produk -->
+  <main class="product-grid">
+    <!-- Kartu produk di sini -->
+  </main>
 
-  <!-- Tombol mengambang "+" -->
+  <!-- Tombol Plus Mengambang -->
   <button class="floating-button" onclick="location.href='add-product.html'">+</button>
 
-  <!-- Navbar bawah -->
-  <footer class="bottom-nav">...</footer>
+  <!-- 🔒 Menu bawah statis -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="active"><img src="img/home.svg"><span>Home</span></a>
+    <a href="cart.html"><img src="img/cart.svg"><span>Cart</span></a>
+    <a href="profile.html"><img src="img/user.svg"><span>Profile</span></a>
+  </nav>
+
 </body>
+</html>
