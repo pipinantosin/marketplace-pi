@@ -1,76 +1,29 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding-bottom: 70px; /* space for navbar */
-}
-
-header {
-  padding: 10px;
-  background: #fff;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-
-.filter-icons {
+/* Horizontal scroll kategori */
+.category-scroll {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 10px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #fff;
   padding: 10px;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+  scrollbar-width: none; /* Firefox */
 }
 
-.product-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 8px;
+.category-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.category-item {
+  flex: 0 0 auto;
   text-align: center;
-}
-
-.stock {
-  color: red;
-  font-size: 0.8em;
-}
-
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background: #eee;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 1px solid #ccc;
-}
-
-.bottom-nav a {
-  text-align: center;
+  width: 60px;
   font-size: 12px;
   color: #333;
 }
 
-.floating-button {
-  position: fixed;
-  bottom: 70px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background: #f04;
-  color: #fff;
-  border-radius: 50%;
-  border: none;
-  font-size: 30px;
-  line-height: 50px;
-  text-align: center;
+.category-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
 }
